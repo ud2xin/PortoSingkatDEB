@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Volunteer DEB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.95;
+            margin-bottom: 5px;
+        }
+
+        .university {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 600;
+        }
+
+        .profile-text {
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .division-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s;
+        }
+
+        .division-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+        }
+
+        .division-title {
+            font-size: 20px;
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .division-icon {
+            font-size: 28px;
+        }
+
+        .division-list {
+            list-style: none;
+        }
+
+        .division-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .division-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .commitment-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">🌱</div>
+                <h1>Muhammad Haikal Syamsuddin</h1>
+                <p class="subtitle">Volunteer Desa Energi Berdikari (DEB)</p>
+                <p class="university">Universitas Singaperbangsa Karawang (Unsika)</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">📋 Profil Singkat</h2>
+                <p class="profile-text">
+                    Saya merupakan mahasiswa Universitas Singaperbangsa Karawang yang memiliki ketertarikan pada pengembangan masyarakat desa melalui pendekatan edukasi, teknologi, dan penguatan ekonomi lokal. Saya terbiasa menyusun materi, melakukan analisis permasalahan, serta mengimplementasikan solusi berbasis digital dan partisipatif. Saya percaya bahwa keberhasilan program Desa Energi Berdikari (DEB) terletak pada sinergi antara edukasi masyarakat, pemanfaatan energi berkelanjutan, dan kemandirian ekonomi desa.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">💼 Kompetensi Utama</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">📚 Penyusunan materi edukasi dan presentasi</div>
+                    <div class="skill-item">🔍 Analisis masalah dan perencanaan solusi</div>
+                    <div class="skill-item">🤝 Komunikasi dan kerja tim</div>
+                    <div class="skill-item">💻 Literasi digital dan teknologi dasar</div>
+                    <div class="skill-item">🎯 Pendampingan masyarakat dan UMKM</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🎓 Divisi Pilihan</h2>
+                
+                <div class="division-card">
+                    <h3 class="division-title">
+                        <span class="division-icon">🌿</span>
+                        Education & Environment
+                    </h3>
+                    <ul class="division-list">
+                        <li>Penyusunan materi edukasi yang mudah dipahami dan kontekstual</li>
+                        <li>Analisis kebutuhan dan tantangan program berbasis kondisi lapangan</li>
+                        <li>Pemahaman dasar literasi lingkungan dan pembangunan berkelanjutan</li>
+                        <li>Pendekatan edukatif untuk anak-anak dan masyarakat umum</li>
+                    </ul>
+                </div>
+
+                <div class="division-card">
+                    <h3 class="division-title">
+                        <span class="division-icon">💰</span>
+                        Economy
+                    </h3>
+                    <ul class="division-list">
+                        <li>Pendampingan pengembangan UMKM berbasis potensi lokal</li>
+                        <li>Pemahaman dasar digital marketing, konten, dan strategi promosi</li>
+                        <li>Integrasi teknologi sederhana untuk mendukung kegiatan ekonomi desa</li>
+                        <li>Dukungan pencatatan dan sistem informasi sederhana bagi UMKM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🤝 Komitmen</h2>
+                <div class="commitment-box">
+                    Saya siap mengikuti seluruh rangkaian kegiatan Desa Energi Berdikari, bekerja secara kolaboratif, serta berkontribusi aktif dan bertanggung jawab demi keberlanjutan program dan kesejahteraan masyarakat Desa Tanjung.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Portofolio Volunteer | Desa Energi Berdikari 2025</p>
+        </div>
+    </div>
+</body>
+</html>
